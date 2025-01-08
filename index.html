@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icon-cep.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Calcule Seu Cep</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="images/cep-logo.png" alt="">
+        <p>seu<br><span>cep</span></p></div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://www.significados.com.br/cep/" target="_blank" class="external">O que é cep?</a>
+                </li>
+                <li class="button">
+                    <a href="https://github.com/Kaique790" class="btn-contact btn" target="_blank">GitHub</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form method="get" novalidate id="form">
+            <div class="form-cep">
+                <label for="cep"><h1>Localize seu CEP:</h1></label>
+                <input type="search" name="cep" id="cep" placeholder="00000-000" maxlength="9">
+                <p class="erro-msg">Digite um CEP válido</p>
+            </div>
+            
+            <button class="btn" type="submit">Localizar</button>
+        </form>
+
+        <section class="results">
+            <h2>Sua localização:</h2>
+            <p>Estado: </p>
+            <span id="state"></span>
+            <p>Bairro: </p>
+            <span id="district"></span>
+            <p>Rua: </p>
+            <span id="street"></span>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
