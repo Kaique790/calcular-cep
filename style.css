@@ -130,6 +130,7 @@ input::placeholder {
     border-radius: 5px;
     width: 12rem;
     border: 2px solid rgba(0, 0, 0, 0);
+    text-align: center;
 }
 
 .erro input {
@@ -202,4 +203,10 @@ form button {
 
 .btn:active, .button:active {
     transform: scale(90%);
+}
+
+@media(min-width: 750px){
+    header{
+        padding-inline: 6%;
+    }
 }
